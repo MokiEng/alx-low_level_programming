@@ -28,8 +28,11 @@ if (!((ones == tens) || (tens == hundreds) ||
 {
 
 putchar(hundreds);
+
 putchar(tens);
+
 putchar(ones);
+
 if (!(ones == '9' && hundreds == '7' && tens == '8'))
 {
 
@@ -38,6 +41,7 @@ putchar(' ');
 
 }
 }
+
 }
 }
 }
