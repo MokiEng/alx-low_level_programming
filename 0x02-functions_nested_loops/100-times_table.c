@@ -20,7 +20,7 @@ void print_times_table(int n)
 				prod = num * mul;
 				if (prod <= 99)
 					_putchar(' ');
-				if (prod <= 9)
+				if (prod <= 0)
 					_putchar(' ');
 				if (prod >= 100)
 				{
