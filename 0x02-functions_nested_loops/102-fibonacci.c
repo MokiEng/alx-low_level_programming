@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
-*main -  prints the sum of all mul of 3 or 5 upto 1024
-*Return: Always (success)
+*main -  prints the first 52 fibonacci numbers
+*Return: Nothing
 */
 int main(void)
 {
