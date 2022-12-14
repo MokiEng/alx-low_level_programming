@@ -22,4 +22,3 @@ long j = 1, k = 2, sum = k;
 	printf("%ld\n", sum);
 	return (0);
 	}
-Footer
