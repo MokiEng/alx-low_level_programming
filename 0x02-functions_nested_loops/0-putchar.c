@@ -3,7 +3,7 @@
 *main -print _putchar
 *is written by mekonen
 *Return: Always 0
-*
+*/
 int main(void)
 
 {
