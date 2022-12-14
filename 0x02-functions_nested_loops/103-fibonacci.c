@@ -17,9 +17,8 @@ long j = 1, k = 2, sum = k;
 			sum += k;
 			j = k - j;
 			++i;
-			printf("%ld\n", sum);
+	}
+	printf("%ld\n", sum);
 			return (0);
 	}
-
-}
 Footer
