@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
-*main -  prints the first 52 fibonacci numbers
-*Return: Nothing!
+* main - Prints the first 52 fibonacci numbers
+*
+* Return: Nothing!
 */
 int main(void)
 {
@@ -11,9 +12,9 @@ long j = 1, k = 2;
 	while (i < 50)
 	{
 		if (i == 0)
-			prinf("%d", j);
+			printf("%ld", j);
 		else if (i == 1)
-			prinf(", %ld", k);
+			printf(", %ld", k);
 		else
 		{
 			k += j;
