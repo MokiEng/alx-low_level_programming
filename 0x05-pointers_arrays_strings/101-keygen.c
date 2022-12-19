@@ -17,6 +17,6 @@ int main(void)
 		sum += pass;
 		printf("%c", pass);
 	}
-	printf("%c", 2722 - sum);
+	printf("%c", 2772 - sum);
 	return (0);
 }
