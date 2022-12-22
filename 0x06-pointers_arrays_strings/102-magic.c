@@ -1,8 +1,4 @@
 #include <stdio.h>
-/**
- * main - prints one more  line to the given code
- * Return: always 0 (success)
- */
 int main(void)
 {
 	int n;
