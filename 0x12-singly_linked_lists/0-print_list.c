@@ -1,7 +1,4 @@
 #include "lists.h"
-
-
-
 /**
  * print_list - prints all the elements of a list
  * @h:pointer to the list
