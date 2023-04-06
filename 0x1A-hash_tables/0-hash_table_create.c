@@ -2,7 +2,7 @@
 /**
  * *hash_table_create - Creates a hash table.
  * @size: The size of the array .
- * Return : If ana error occure - Null.
+ * Return : If ana error occure - NULL.
  *          Otherwise - a pointer to the new hash table
  */
 hash_table_t *hash_table_create(unsigned long int size)
