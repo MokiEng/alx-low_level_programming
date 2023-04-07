@@ -189,6 +189,7 @@ void shash_table_print_rev(const shash_table_t *ht)
 /**
  * shash_table _delete - Deletes a sorted hash table.
  * @ht: A pointer to the sorted hash table.
+ * Return : void
  */
 void shash_table_delete(shash_table_t *ht)
 {
