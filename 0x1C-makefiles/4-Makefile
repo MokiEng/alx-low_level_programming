@@ -21,11 +21,7 @@ all: $(NAME)
 
 # Rule to link object files and create the executable
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
-
-# Rule to compile individual source files
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(OBJ) -o $(NAME)
 
 # Rule to delete Emacs and Vim temporary files, the executable, and the object files
 clean:
