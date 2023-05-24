@@ -22,13 +22,9 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-# Rule to compile individual source files
-%.o: %.c
-$(CC) -c $< -o $@
-
 # Rule to clean Emacs and Vim temporary files, object files, and the executable
 clean:
-	$(RM) *~ *.swp $(NAME)
+	$(RM) *~ $(NAME)
 
 # Rule to clean object files
 oclean:
@@ -39,6 +35,3 @@ fclean: clean oclean
 
 # Rule to force recompilation of all source files
 re: fclean all
-
-# Set phony targets
-.PHONY: all clean oclean fclean re
