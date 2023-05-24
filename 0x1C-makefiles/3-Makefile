@@ -24,7 +24,7 @@ $(NAME): $(OBJ)
 
 # Rule to compile individual source files
 %.o: %.c
-# $(CC) $(CFLAGS) -c $< -o $@
+$(CC) -c $< -o $@
 
 # Rule to clean Emacs and Vim temporary files, object files, and the executable
 clean:
