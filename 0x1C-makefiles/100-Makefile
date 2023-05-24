@@ -10,16 +10,20 @@ NAME = school
 # List of source files
 SRC = main.c school.c
 
+# List of object files (automatically generated from source files)
+OBJ = $(SRC:.c=.o)
+
 # Rule to build the executable
 all: $(NAME)
 
 # Rule to link object files and create the executable
 $(NAME): $(SRC:.c=.o)
-	$(CC) $(CFLAGS) $^ -o $@
+	#$(CC) $(CFLAGS) $^ -o $@
+	$(CC) $(OBJ) -o $(NAME)
 
 # Rule to compile individual source files
 %.o: %.c m.h
-	$(CC) $(CFLAGS) -c $< -o $@
+	#$(CC) $(CFLAGS) -c $< -o $@
 
 # Rule to delete Emacs and Vim temporary files, and the executable
 clean:
