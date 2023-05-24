@@ -8,7 +8,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 NAME = school
 
 # List of source files
-SRC = main.c utils.c
+SRC = main.c school.c
 
 # List of object files (automatically generated from source files)
 OBJ = $(SRC:.c=.o)
