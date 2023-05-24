@@ -1,0 +1,26 @@
+# Makefile for the 'school' executable
+
+# Compiler options
+CC ?= gcc
+CFLAGS = -Wall -Wextra
+
+# List of source files
+SRC ?= main.c school.c
+
+# List of object files (automatically generated from source files)
+OBJS = $(SRC:.c=.o)
+
+# Rule to build the executable
+all: school
+
+# Rule to link object files and create the executable
+school: $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o school
+
+# Rule to compile individual source files
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Clean rule to remove object files and the executable
+clean:
+	rm -f $(OBJS) school
