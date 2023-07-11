@@ -2,7 +2,7 @@
 
 /**
  * linear_search - searches for a value in  array of integers using
- *	the Linear search algorithm.
+ *the Linear search algorithm.
  *
  * @array: a pointer to the first element of the array to search in
  * @size: number of elements in array
