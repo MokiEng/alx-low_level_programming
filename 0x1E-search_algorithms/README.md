@@ -1,5 +1,3 @@
-Sure! Here's an example README file that provides an overview of search algorithms implemented in the C programming language:
-
 # Search Algorithms in C
 
 This repository contains implementations of various search algorithms in the C programming language. These algorithms are designed to efficiently search for specific elements in an array or list of data.
