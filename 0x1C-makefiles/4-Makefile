@@ -2,6 +2,7 @@
 
 # Compiler options
 CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
 # Name of the executable
 NAME = school
@@ -22,15 +23,15 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-# Rule to clean Emacs and Vim temporary files, object files, and the executable
+# Rule to delete Emacs and Vim temporary files, the executable, and the object files
 clean:
 	$(RM) *~ $(NAME)
 
-# Rule to clean object files
+# Rule to delete the object files
 oclean:
 	$(RM) $(OBJ)
 
-# Rule to clean Emacs and Vim temporary files, object files, and the executable
+# Rule to delete Emacs and Vim temporary files, the executable, and the object files
 fclean: clean oclean
 
 # Rule to force recompilation of all source files
