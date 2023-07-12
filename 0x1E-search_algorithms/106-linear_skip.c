@@ -11,10 +11,9 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 {
 	skiplist_t *k;
 
+	k = list;
 	if (list == NULL)
 		return (NULL);
-
-	k = list;
 
 	do {
 		list = k;
