@@ -11,7 +11,7 @@
 int rec_search(int *array, size_t size, int value)
 {
 	size_t j, mid;
-	
+
 	mid = size / 2;
 
 	if (array == NULL || size == 0)
